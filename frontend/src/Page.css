@@ -1,0 +1,86 @@
+/* App.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #001f3f; /* Navy blue background */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.App {
+    background: #fff8dc; /* Light golden background for the container */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 80%;
+    max-width: 800px;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 10px;
+    font-size: 2rem;
+}
+
+p {
+    color: #555;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.text-box,
+.summary-box {
+    margin-bottom: 20px;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    line-height: 1.5;
+    resize: vertical; /* Allows vertical resizing only */
+    background-color: #fff8dc; /* Light golden background for textareas */
+}
+
+textarea:focus {
+    border-color: #ffcc00; /* Golden border on focus */
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(255, 204, 0, 0.5); /* Golden shadow on focus */
+}
+
+button {
+    background-color: #ffcc00; /* Golden button */
+    color: #001f3f; /* Navy blue text */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    margin: 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #e6b800; /* Darker gold on hover */
+}
+
+button:active {
+    background-color: #cc9900; /* Even darker gold on click */
+}
+
+.summary-box textarea {
+    background-color: #fff8dc; /* Light golden background for the result textarea */
+    border-color: #ccc;
+    cursor: not-allowed;
+}
