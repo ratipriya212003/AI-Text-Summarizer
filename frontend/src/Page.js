@@ -13,7 +13,7 @@ function App() {
   const handleSubmit = async () => {
     try {
        setLoading(true);
-        const response = await fetch('http://localhost:4000/summarize', {
+        const response = await fetch('https://ai-text-summarizer-backend.vercel.app/summarize', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
